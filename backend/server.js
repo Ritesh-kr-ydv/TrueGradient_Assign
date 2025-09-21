@@ -9,11 +9,18 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middleware
+const corsOptions = {
+  origin: 'http://localhost:3000', // Your frontend URL
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true, // Allow cookies/headers
+};
+app.use(cors(corsOptions));
 app.use(cors());
 app.use(express.json());
 
 // Routes
 app.use('/api/auth', authRoutes);
+// app.use 
 
 // Health check
 app.get('/api/health', (req, res) => {
