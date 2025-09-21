@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //const API_URL = 'http://localhost:5001/api/auth';
-const API_URI='https://truegradient-assign-1.onrender.com'
+const API_URI='https://truegradient-assign-1.onrender.com/api/auth'
 
 
 // Create axios instance
