@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5001;
 
 // Middleware
 const corsOptions = {
-  origin: ['http://localhost:3000','https://truegradient-assign-5.onrender.com'], // Your frontend URL
+  origin: ['http://localhost:3000','https://chat-app-vuky.onrender.com'], // Your frontend URL
   methods: 'GET,POST,PUT,DELETE',
   credentials: true, // Allow cookies/headers
 };
